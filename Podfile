@@ -4,6 +4,7 @@ target 'TestNetworkLayer' do
   use_frameworks!
   pod 'SwiftyJSON'
   pod 'AFNetworking'
+  pod 'Alamofire'
 
   target 'TestNetworkLayerTests' do
     inherit! :search_paths

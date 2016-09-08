@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Alamofire (3.4.1)
   - Mockingjay (1.2.2):
     - Mockingjay/Core (= 1.2.2)
     - Mockingjay/XCTest (= 1.2.2)
@@ -28,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire
   - Mockingjay
   - Nimble
   - Quick
@@ -35,12 +37,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   Mockingjay: 5de65f14108473afc6727e05df9a3ecc9cef8562
   Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   URITemplate: 398a48d6559e23b77bd41176b675b017ad1fc959
 
-PODFILE CHECKSUM: 770facd718126523ec0a4e9779d3154b6f5753f3
+PODFILE CHECKSUM: dbddf8a169983f9ec87f6f29cb7c67145348019b
 
 COCOAPODS: 1.0.1

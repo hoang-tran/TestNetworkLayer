@@ -18,6 +18,7 @@
 		F3516FCA1D81AE4500C6D7E8 /* NativeApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3516FC91D81AE4500C6D7E8 /* NativeApiClient.swift */; };
 		F3516FCC1D81AF7300C6D7E8 /* GitHubApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3516FCB1D81AF7300C6D7E8 /* GitHubApiClient.swift */; };
 		F3516FCE1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3516FCD1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift */; };
+		F3516FD01D81C00300C6D7E8 /* AlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3516FCF1D81C00300C6D7E8 /* AlamofireApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F3516FC91D81AE4500C6D7E8 /* NativeApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeApiClient.swift; sourceTree = "<group>"; };
 		F3516FCB1D81AF7300C6D7E8 /* GitHubApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubApiClient.swift; sourceTree = "<group>"; };
 		F3516FCD1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNetworkingApiClient.swift; sourceTree = "<group>"; };
+		F3516FCF1D81C00300C6D7E8 /* AlamofireApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				F317D3301D81A4C200B871E3 /* Info.plist */,
 				F3516FC91D81AE4500C6D7E8 /* NativeApiClient.swift */,
 				F3516FCD1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift */,
+				F3516FCF1D81C00300C6D7E8 /* AlamofireApiClient.swift */,
 				F3516FCB1D81AF7300C6D7E8 /* GitHubApiClient.swift */,
 			);
 			path = TestNetworkLayer;
@@ -339,6 +342,7 @@
 			files = (
 				F3516FCC1D81AF7300C6D7E8 /* GitHubApiClient.swift in Sources */,
 				F3516FCA1D81AE4500C6D7E8 /* NativeApiClient.swift in Sources */,
+				F3516FD01D81C00300C6D7E8 /* AlamofireApiClient.swift in Sources */,
 				F3516FCE1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift in Sources */,
 				F317D3271D81A4C200B871E3 /* ViewController.swift in Sources */,
 				F317D3251D81A4C200B871E3 /* AppDelegate.swift in Sources */,
