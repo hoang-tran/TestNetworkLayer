@@ -3,6 +3,7 @@ platform :ios, '9.0'
 target 'TestNetworkLayer' do
   use_frameworks!
   pod 'SwiftyJSON'
+  pod 'AFNetworking'
 
   target 'TestNetworkLayerTests' do
     inherit! :search_paths

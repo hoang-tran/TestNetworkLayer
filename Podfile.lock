@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - Mockingjay (1.2.2):
     - Mockingjay/Core (= 1.2.2)
     - Mockingjay/XCTest (= 1.2.2)
@@ -12,18 +27,20 @@ PODS:
   - URITemplate (1.3.1)
 
 DEPENDENCIES:
+  - AFNetworking
   - Mockingjay
   - Nimble
   - Quick
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Mockingjay: 5de65f14108473afc6727e05df9a3ecc9cef8562
   Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   URITemplate: 398a48d6559e23b77bd41176b675b017ad1fc959
 
-PODFILE CHECKSUM: d5c712adf6191da7d3452054f5d7b45d03b6ee06
+PODFILE CHECKSUM: 770facd718126523ec0a4e9779d3154b6f5753f3
 
 COCOAPODS: 1.0.1
