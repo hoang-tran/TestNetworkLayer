@@ -14,7 +14,7 @@
 		F317D32A1D81A4C200B871E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F317D3281D81A4C200B871E3 /* Main.storyboard */; };
 		F317D32C1D81A4C200B871E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F317D32B1D81A4C200B871E3 /* Assets.xcassets */; };
 		F317D32F1D81A4C200B871E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F317D32D1D81A4C200B871E3 /* LaunchScreen.storyboard */; };
-		F317D33A1D81A4C200B871E3 /* TestNetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317D3391D81A4C200B871E3 /* TestNetworkLayerTests.swift */; };
+		F317D3451D81A78E00B871E3 /* MyApiClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317D3441D81A78E00B871E3 /* MyApiClientSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		F317D32E1D81A4C200B871E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F317D3301D81A4C200B871E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F317D3351D81A4C200B871E3 /* TestNetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestNetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F317D3391D81A4C200B871E3 /* TestNetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkLayerTests.swift; sourceTree = "<group>"; };
 		F317D33B1D81A4C200B871E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F317D3441D81A78E00B871E3 /* MyApiClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyApiClientSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 		F317D3381D81A4C200B871E3 /* TestNetworkLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F317D3391D81A4C200B871E3 /* TestNetworkLayerTests.swift */,
 				F317D33B1D81A4C200B871E3 /* Info.plist */,
+				F317D3441D81A78E00B871E3 /* MyApiClientSpec.swift */,
 			);
 			path = TestNetworkLayerTests;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F317D33A1D81A4C200B871E3 /* TestNetworkLayerTests.swift in Sources */,
+				F317D3451D81A78E00B871E3 /* MyApiClientSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,10 +483,12 @@
 			baseConfigurationReference = 0C0B8106BA1F308843201A06 /* Pods-TestNetworkLayerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestNetworkLayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoang.tran.TestNetworkLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestNetworkLayer.app/TestNetworkLayer";
 			};
 			name = Debug;
@@ -496,6 +498,7 @@
 			baseConfigurationReference = 3D9B85F54C9DFDF5E313208B /* Pods-TestNetworkLayerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestNetworkLayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoang.tran.TestNetworkLayerTests;
