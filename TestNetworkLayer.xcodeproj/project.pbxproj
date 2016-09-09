@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39E6E0E31D82A4490051DD4E /* GitHubUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6E0E21D82A4490051DD4E /* GitHubUserData.swift */; };
 		4AF30917F544A203B0B1A7FC /* Pods_TestNetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E539D6E742766CD8A40F7E /* Pods_TestNetworkLayer.framework */; };
 		536FCCF61DAD8CC89C409AE1 /* Pods_TestNetworkLayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1624BDE3EE53CE5BAD4EBC65 /* Pods_TestNetworkLayerTests.framework */; };
 		F317D3251D81A4C200B871E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317D3241D81A4C200B871E3 /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		0C0B8106BA1F308843201A06 /* Pods-TestNetworkLayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestNetworkLayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestNetworkLayerTests/Pods-TestNetworkLayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0F6242A829B40ADC3B08DDB5 /* Pods-TestNetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestNetworkLayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestNetworkLayer/Pods-TestNetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		1624BDE3EE53CE5BAD4EBC65 /* Pods_TestNetworkLayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestNetworkLayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E6E0E21D82A4490051DD4E /* GitHubUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserData.swift; sourceTree = "<group>"; };
 		3D9B85F54C9DFDF5E313208B /* Pods-TestNetworkLayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestNetworkLayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestNetworkLayerTests/Pods-TestNetworkLayerTests.release.xcconfig"; sourceTree = "<group>"; };
 		63E539D6E742766CD8A40F7E /* Pods_TestNetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestNetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD14A8F8D7D9674E0510BCD /* Pods-TestNetworkLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestNetworkLayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestNetworkLayer/Pods-TestNetworkLayer.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				F3516FCD1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift */,
 				F3516FCF1D81C00300C6D7E8 /* AlamofireApiClient.swift */,
 				F3516FCB1D81AF7300C6D7E8 /* GitHubApiClient.swift */,
+				39E6E0E21D82A4490051DD4E /* GitHubUserData.swift */,
 			);
 			path = TestNetworkLayer;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				F3516FCA1D81AE4500C6D7E8 /* NativeApiClient.swift in Sources */,
 				F3516FD01D81C00300C6D7E8 /* AlamofireApiClient.swift in Sources */,
 				F3516FCE1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift in Sources */,
+				39E6E0E31D82A4490051DD4E /* GitHubUserData.swift in Sources */,
 				F317D3271D81A4C200B871E3 /* ViewController.swift in Sources */,
 				F317D3251D81A4C200B871E3 /* AppDelegate.swift in Sources */,
 			);

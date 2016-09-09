@@ -11,17 +11,17 @@ import SwiftyJSON
 
 class NativeApiClient: GitHubApiClient {
   
-  static func requestGitHubUserWithName(name: String) {
+  static func requestUserWithName(name: String, onSuccess: GitHubGetUserCallback?, onError: ErrorCallback? = nil) {
     let urlString = "\(kGitHubApiBaseUrl)users/\(name)"
     let url = NSURL(string: urlString)!
 
     let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
     let dataTask = defaultSession.dataTaskWithURL(url) { data, response, error in
       if let error = error {
-        print("error: \(error)")
+        onError?(error)
       } else if let data = data {
         let json = JSON(data: data)
-        print("data: \(json)")
+        onSuccess?(GitHubUserData(json: json))
       }
     }
     dataTask.resume()

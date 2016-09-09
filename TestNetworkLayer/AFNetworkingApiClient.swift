@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class AFNetworkingApiClient: GitHubApiClient {
   
-  static func requestGitHubUserWithName(name: String) {
+  static func requestUserWithName(name: String, onSuccess: GitHubGetUserCallback?, onError: ErrorCallback? = nil) {
     let urlString = "\(kGitHubApiBaseUrl)users/\(name)"
     let url = NSURL(string: urlString)!
     
@@ -19,10 +19,10 @@ class AFNetworkingApiClient: GitHubApiClient {
     let request = NSURLRequest(URL: url)
     let dataTask = manager.dataTaskWithRequest(request) { response, data, error in
       if let error = error {
-        print("error: \(error)")
+        onError?(error)
       } else if let data = data {
         let json = JSON(data)
-        print("data: \(json)")
+        onSuccess?(GitHubUserData(json: json))
       }
     }
     dataTask.resume()

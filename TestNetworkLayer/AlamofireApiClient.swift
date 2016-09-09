@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class AlamofireApiClient: GitHubApiClient {
   
-  static func requestGitHubUserWithName(name: String) {
+  static func requestUserWithName(name: String, onSuccess: GitHubGetUserCallback?, onError: ErrorCallback? = nil) {
     let urlString = "\(kGitHubApiBaseUrl)users/\(name)"
 
     Alamofire.request(.GET, urlString)
@@ -21,10 +21,10 @@ class AlamofireApiClient: GitHubApiClient {
         case .Success:
           if let data = response.result.value {
             let json = JSON(data)
-            print("data: \(json)")
+            onSuccess?(GitHubUserData(json: json))
           }
         case .Failure(let error):
-          print(error)
+          onError?(error)
         }
     }
   }
