@@ -20,6 +20,8 @@
 		F3516FCC1D81AF7300C6D7E8 /* GitHubApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3516FCB1D81AF7300C6D7E8 /* GitHubApiClient.swift */; };
 		F3516FCE1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3516FCD1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift */; };
 		F3516FD01D81C00300C6D7E8 /* AlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3516FCF1D81C00300C6D7E8 /* AlamofireApiClient.swift */; };
+		F38AE80D1D83A565008D2DAC /* GetUserSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = F38AE80C1D83A565008D2DAC /* GetUserSuccess.json */; };
+		F38AE80F1D83AAA3008D2DAC /* XCTest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AE80E1D83AAA3008D2DAC /* XCTest+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		F3516FCB1D81AF7300C6D7E8 /* GitHubApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubApiClient.swift; sourceTree = "<group>"; };
 		F3516FCD1D81BB3300C6D7E8 /* AFNetworkingApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNetworkingApiClient.swift; sourceTree = "<group>"; };
 		F3516FCF1D81C00300C6D7E8 /* AlamofireApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireApiClient.swift; sourceTree = "<group>"; };
+		F38AE80C1D83A565008D2DAC /* GetUserSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetUserSuccess.json; sourceTree = "<group>"; };
+		F38AE80E1D83AAA3008D2DAC /* XCTest+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +141,20 @@
 		F317D3381D81A4C200B871E3 /* TestNetworkLayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				F38AE80B1D83A512008D2DAC /* Fixtures */,
 				F317D33B1D81A4C200B871E3 /* Info.plist */,
 				F317D3441D81A78E00B871E3 /* MyApiClientSpec.swift */,
+				F38AE80E1D83AAA3008D2DAC /* XCTest+Extensions.swift */,
 			);
 			path = TestNetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		F38AE80B1D83A512008D2DAC /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F38AE80C1D83A565008D2DAC /* GetUserSuccess.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38AE80D1D83A565008D2DAC /* GetUserSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38AE80F1D83AAA3008D2DAC /* XCTest+Extensions.swift in Sources */,
 				F317D3451D81A78E00B871E3 /* MyApiClientSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
