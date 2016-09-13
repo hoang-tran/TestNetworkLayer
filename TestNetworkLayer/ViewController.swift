@@ -14,6 +14,6 @@ class ViewController: UIViewController {
     let onSuccess: (GitHubUserData) -> Void = { userData in
       print(userData)
     }
-    NativeApiClient.requestUserWithName("hoang-tran", onSuccess: onSuccess)
+    NativeApiClient.requestUserWithUsername("hoang-tran", onSuccess: onSuccess)
   }
 }

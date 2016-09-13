@@ -11,7 +11,7 @@ import Nimble
 import Mockingjay
 @testable import TestNetworkLayer
 
-class MyApiClientSpec : QuickSpec {
+class NativeApiClientSpec : QuickSpec {
   override func spec() {
     super.spec()
 
@@ -28,13 +28,13 @@ class MyApiClientSpec : QuickSpec {
       context("success") {
         beforeEach {
           self.stub(urlString, jsonFileName: "GetUserSuccess")
-          NativeApiClient.requestUserWithName("hoang-tran", onSuccess: { userData in
+          NativeApiClient.requestUserWithUsername("hoang-tran", onSuccess: { userData in
             returnedUserData = userData
           })
         }
 
         it("returns GitHubUserData") {
-          expect(returnedUserData).toEventuallyNot(beNil())
+          expect(returnedUserData).toEventuallyNot(beNil(), timeout: 20)
           expect(returnedUserData?.name) == "Hoang Tran"
           expect(returnedUserData?.bio) == "Hi, I'm Hoang. I'm a Swift lover. I blog weekly about iOS development/testing/deployment at http://hoangtran.me/\r\nAnd I happen to love GitHub so much 😜 "
           expect(returnedUserData?.email) == "hoangtx.master@gmail.com"
@@ -48,7 +48,7 @@ class MyApiClientSpec : QuickSpec {
 
         beforeEach {
           self.stub(urlString, error: error)
-          NativeApiClient.requestUserWithName("hoang-tran", onError: { error in
+          NativeApiClient.requestUserWithUsername("hoang-tran", onError: { error in
             returnedError = error
           })
         }

@@ -11,8 +11,8 @@ import SwiftyJSON
 
 class NativeApiClient: GitHubApiClient {
   
-  static func requestUserWithName(name: String, onSuccess: GitHubGetUserCallback? = nil, onError: ErrorCallback? = nil) {
-    let urlString = "\(kGitHubApiBaseUrl)users/\(name)"
+  static func requestUserWithUsername(username: String, onSuccess: GitHubGetUserCallback? = nil, onError: ErrorCallback? = nil) {
+    let urlString = "https://api.github.com/users/\(username)"
     let url = NSURL(string: urlString)!
 
     let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())

@@ -14,5 +14,7 @@ typealias GitHubGetUserCallback = (GitHubUserData) -> Void
 typealias ErrorCallback = (NSError) -> Void
 
 protocol GitHubApiClient {
-  static func requestUserWithName(name: String, onSuccess: GitHubGetUserCallback?, onError: ErrorCallback?)
+  static func requestUserWithUsername(username: String,
+                                  onSuccess: GitHubGetUserCallback?,
+                                  onError: ErrorCallback?)
 }
